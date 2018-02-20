@@ -1,3 +1,14 @@
-.orginal{
-  text-decoration: overline;
+@primary-colour: #eb531c;
+@dark-grey: #171717;
+@light-grey: #cbcbcb;
+#content{
+    margin-top:50px !important;
+    padding-top: 0.5em !important;
+}
+#navBar{
+    background-color: #eb531c;
+    max-height: 50px !important;
+}
+.white-text{
+    color:white;
 }
