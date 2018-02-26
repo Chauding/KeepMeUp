@@ -4,6 +4,8 @@
 #content{
     margin-top:50px !important;
     padding-top: 0.5em !important;
+    height: calc(100vh - 50px);
+    overflow-y: auto;
 }
 #navBar{
     background-color: #eb531c;
