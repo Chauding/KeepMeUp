@@ -5,4 +5,5 @@ Index.load = function(){
     $(".remove").off('click').on('click', function(){
         $('.ui.sidebar') .sidebar('hide');
     }); 
+    $('.ui.dropdown').dropdown();
 };
