@@ -6,6 +6,7 @@
     <meta name="description" content="Social Media Dashboard">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/ResetPassword.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
     <title>KeepMeUp</title>
   </head>
@@ -239,6 +240,8 @@
                      <div cass="ui form">
                          <label for="">Username</label>
                          <input type="text">
+                         <label for="">Email Address</label>
+                         <input type="text">
                      </div>
                  </div>
                  <div class="ui tab" data-tab="account">
@@ -246,6 +249,35 @@
                  </div>
                  <div class="ui tab" data-tab="addAccount">
                      <i class="large plus icon"></i>
+                      <div id="addAccountContent" class="ui centered algined padded grid">
+                      <div class="sixteen wide column">
+                      <h3 align = "left">Add an account with us!</h3>
+                 <div class="3 wide field">
+                <p>Enter your account username and we'll get it linked up!</p>
+                </div> 
+            <div class="field">
+          <div class="ui input">
+            <input type="text" name="reddit username" placeholder="reddit account ">
+          </div>
+        </div>
+        <br>
+        <div class="field">
+          <div class="ui input">
+            <input type="text" name="instagram username" placeholder="instagram account">
+          </div>
+        </div>
+            <br>
+            <div class="field">
+          <div class="ui input">
+            <input type="text" name="twitter username" placeholder="instagram account">
+          </div>
+            </div>
+            <br>
+        <button type="button">Search for Account!</button>
+           <i class="fa fa-search"></i>
+                          
+                 </div>
+             </div>
                  </div>
              </div>
          </div>
