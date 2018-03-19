@@ -15,32 +15,26 @@
     <a class="item" style="height:45px">
       <i class="large remove icon"></i>
     </a>
-    <a class="item">
-      settings <i class="cogs icon" style="color: white"></i>
+     <a class="item" data-tab="main">
+      Dashboard <i class="home icon" style="color: white"></i>
+    </a>
+    <a class="item" data-tab="settings">
+      Settings <i class="cogs icon" style="color: white"></i>
     </a>
     <a class="item">
-      privacy <i class="lock icon" style="color: white"></i>
+      Privacy <i class="lock icon" style="color: white"></i>
     </a>
       <a class="item">
-      accounts <i class="users icon" style="color: white"></i>
-    </a>
-      <a class="item">
-        add account <i class="user icon" style="color: white"></i>
-      </a>
-      <a class="item">
-        sign out <i class="sign out alternate icon" style="color: white"></i>
+        Sign out <i class="sign out alternate icon" style="color: white"></i>
       </a>
 
   </div>
   <div class="pusher" class="ui grid">
-    <div class = "three wide column">
+    
     <div id="navBar" class="ui fixed borderless menu">
          <div id="burger-menu" href="#" class="item">
            <i class="content icon white-text"></i>
          </div>
-
-
-
          <div id="search" class="ui fluid category search">
            <div class="ui icon input">
              <input class="prompt" type="text" placeholder="search">
@@ -48,7 +42,6 @@
            </div>
            <div class="results"></div>
          </div>
-
          <div class = "three wide column">
            <div class="right menu">
              <a href="#" class="item">
@@ -57,12 +50,12 @@
            </div>
          </div>
        </div>
-
-    <div id="content" class="ui three column grid">
-      <div class="column">
+    
+    <div id="mainContent" class="ui tab active" data-tab="main">
+        <div id="content" class="ui three column grid">
+      <div class="column instagram">
         <h3>INSTAGRAM</h3>
         <div class = "ui padded center aligned segments" style="height:90%;overflow:auto">
-
           <div class = "ui segment">
             <div class="ui centered card">
               <div class="left aligned content">
@@ -112,15 +105,11 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
-
-
-      <div class="column">
+      <div class="column twitter">
         <h3>TWITTER</h3>
         <div class = "ui padded center aligned segments" style="height:90%;overflow:auto">
-
           <div class = "ui segment">
             <div class="ui centered card">
               <div class="left aligned content">
@@ -145,7 +134,6 @@
               </div>
             </div>
           </div>
-
           <div class = "ui segment">
             <div class="ui centered card">
               <div class="left aligned content">
@@ -173,7 +161,7 @@
 
         </div>
       </div>
-      <div class="column">
+      <div class="column reddit">
         <h3>REDDIT</h3>
         <div class = "ui padded segments" style="height:90%;overflow:auto">
 
@@ -229,15 +217,42 @@
 
         </div>
       </div>
-</div>
-
-
-
+    </div>
+      </div>
+     <div id="settingContent" class="ui tab" data-tab="settings">
+         <div class="ui grid">
+             <div class="four wide column">
+                 <div class="ui secondary vertical pointing menu">
+                    <a class="item" data-tab="basic">
+                        Basic Information
+                    </a>
+                    <a class="item" data-tab="account">
+                        Accounts
+                    </a>
+                     <a class="item" data-tab="addAccount">
+                         Add account
+                     </a>
+                   </div>
+             </div>
+             <div class="twelve wide column">
+                 <div class="ui tab active" dat-tab="basic">
+                     <div cass="ui form">
+                         <label for="">Username</label>
+                         <input type="text">
+                     </div>
+                 </div>
+                 <div class="ui tab" dat-tab="account">
+                 </div>
+                 <div class="ui tab" dat-tab="addAccount">
+                 </div>
+             </div>
+         </div>
+     </div>
   </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="../semantic/dist/semantic.min.js"></script>
     <script src="../javascript/index.js" onload="Index.load()"></script>
-
+      <script src="../javascript/index.js" onchange="Index.onChange()></script>
   </body>
 </html>
