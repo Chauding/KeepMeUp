@@ -7,9 +7,6 @@ Index.load = function(){
         $('.ui.sidebar') .sidebar('hide');
     });
     $('.ui.dropdown').dropdown();
-    $('.sidebar.inverted.vertical.menu .item').tab();
-    
+    $('.menu .item').tab();
+    $('.vertical.pointing.menu .item').tab();  
 };
-Index.onChange = function (){
-    $('.vertical.pointing.menu .item').tab();
-}

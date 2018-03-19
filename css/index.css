@@ -4,7 +4,7 @@
 .lab-hidden{
     display:none !important;
 }
-#content, #settingContent{
+#content, #settingContent, #privacyContent{
     margin-top:50px !important;
     padding-top: 0.5em !important;
     height: calc(100vh - 50px);
