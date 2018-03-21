@@ -1,6 +1,7 @@
 @primary-colour: #eb531c;
 @dark-grey: #171717;
 @light-grey: #cbcbcb;
+@pageBackground      : #ebebeb;
 .lab-hidden{
     display:none !important;
 }
@@ -21,4 +22,9 @@
 #search{
 margin: auto;
 padding: 5px;
+}
+
+body {
+background-color:;
+
 }

@@ -6,11 +6,11 @@
     <meta name="description" content="Social Media Dashboard">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/ResetPassword.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
     <title>KeepMeUp</title>
   </head>
-  <body style="background-color:">
+  <body>
 
  <div class="ui sidebar inverted vertical menu borderless">
     <a class="item" style="height:45px">
@@ -53,7 +53,7 @@
        </div>
 
     <div id="mainContent" class="ui tab active" data-tab="main">
-        <div id="content" class="ui three column grid">
+        <div id="content" class="ui padded three column grid">
       <div class="column instagram">
         <h3>INSTAGRAM</h3>
         <div class = "ui padded center aligned segments" style="height:90%;overflow:auto">
@@ -221,9 +221,9 @@
     </div>
   </div>
     <div id="settingContent" class="ui tab" data-tab="settings">
-         <div class="ui grid">
-             <div class="four wide column">
-                 <div id="settingsMenu" class="ui secondary vertical pointing menu">
+         <div class="ui centered grid">
+             <div class="ten wide centered column">
+                 <div id="settingsMenu" class="ui three item menu">
                     <a class="item active" data-tab="basic">
                         Basic Information
                     </a>
@@ -235,69 +235,130 @@
                      </a>
                    </div>
              </div>
-             <div class="twelve wide column">
+             <div class="ten wide column">
                  <div class="ui tab active" data-tab="basic">
-                    <br>
-                     <div cass="ui form">
+
+                     <!-- <div cass="ui form">
                          <label for="">Username</label>
                          <input type="text">
                          <label for="">Email Address</label>
                          <input type="text">
-                     </div>
+                     </div> -->
+
+                <img class="ui centered small image" src="../images/keepmeup-logo-no-text.png">
+
+
+                     <div class="ui huge center aligned header">Profile</div>
+                     <table class="ui celled table">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <b>name<b>
+                          </td>
+                          <td>
+                            Firstname Lastname
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <b>age<b>
+                          </td>
+                          <td>
+                            xx years old
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <b>username<b>
+                          </td>
+                          <td>
+                            KeepMeUp Username
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <b>contact<b>
+                          </td>
+                          <td>
+                            (+44) 07x xxx xxxxx
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <b>email<b>
+                          </td>
+                          <td>
+                            email@email.com
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <br>
+
+                    <div class="ui huge center aligned header">About me</div>
+                    <div class = "ui eight wide center aligned segment">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum arcu quis lorem condimentum posuere. Donec nec nisi mauris. Mauris pretium, ligula lacinia fermentum semper, tortor purus posuere tellus, quis porttitor dui nisi sit amet diam.</p>
+                    </div>
+
                  </div>
                  <div class="ui tab" data-tab="account">
                      <br>
-                     <div class="ui three column centered grid">
-                       <div class="five wide column">
+                     <div class="ui three column grid">
+                       <div class="column">
                          <div class="ui card">
                            <a class="image" href="#">
-                             <img src="../images/iprofile2.png">
+                             <img src="../images/iprofile3.png">
                            </a>
                            <div class="content">
-                             <a class="header" href="#">Instagram</a>
+                             <a class="header" href="https://www.instagram.com/">Instagram</a>
                              <div class="meta">
-                               <a>Instagram username</a>
+                               <p>Instagram username</p>
                              </div>
                            </div>
-                           <div class="ui bottom attached button">
-                             <i class="minus icon"></i>
-                             Delete account
+                           <div class="ui bottom attached red button">
+
+                             delete account
                            </div>
                          </div>
                        </div>
 
-                       <div class="five wide column">
+                       <div class="column">
                          <div class="ui card">
                            <a class="image" href="#">
-                             <img src="../images/tprofile2.png">
+                             <img src="../images/tprofile3.png">
                            </a>
                            <div class="content">
-                             <a class="header" href="#">Twitter</a>
+                             <a class="header" href="https://twitter.com/">Twitter</a>
                              <div class="meta">
-                               <a>Twitter username</a>
+                               <p>Twitter username</p>
                              </div>
                            </div>
-                           <div class="ui bottom attached button">
-                             <i class="minus icon"></i>
-                             Delete account
+                           <div class="ui bottom attached red button">
+
+                             delete account
                            </div>
                          </div>
                        </div>
 
-                       <div class="five wide column">
+                       <div class="column">
                          <div class="ui card">
                            <a class="image" href="#">
-                             <img src="../images/rprofile2.png">
+                             <img src="../images/rprofile3.png">
                            </a>
                            <div class="content">
-                             <a class="header" href="#">Reddit</a>
+                             <a class="header" href="https://www.reddit.com/">Reddit</a>
                              <div class="meta">
-                               <a>Reddit username</a>
+                               <p>Reddit username</p>
                              </div>
                            </div>
-                           <div class="ui bottom attached button">
-                             <i class="minus icon"></i>
-                             Delete account
+                           <div class="ui bottom attached red button">
+
+                             delete account
                            </div>
                          </div>
                        </div>
@@ -306,13 +367,14 @@
                  </div>
                  <div class="ui tab" data-tab="addAccount">
 
-                      <div id="addAccountContent" class="ui centered algined padded grid">
-                      <div class="ten wide center aligned column">
+                      <div id="addAccountContent" class="ui padded centered grid">
+                      <div class="twelve wide center aligned column">
                       <h3>Add an account with us!</h3>
-                 <div class="3 wide field">
-                <p>Enter your account username and we'll get it linked up!</p>
-                <br>
+                 <div class="field">
+                <p>Choose desired social media, enter your account username and we'll get it linked up!</p>
+
                 </div>
+                <!--
             <div class="field">
           <div class="ui input">
             <input type="text" name="reddit username" placeholder="reddit account ">
@@ -328,20 +390,37 @@
             <div class="field">
           <div class="ui input">
             <input type="text" name="twitter username" placeholder="instagram account">
-          </div>
-            </div>
-            <br>
-        <button class=" ui button">Search for Account!&nbsp <i class="fa fa-search"></i></button>
-                         
-
-                 </div>
-             </div>
+          </div> -->
+                    <br>
+                      <div class="ui padded form">
+                        <div class="ui selection dropdown">
+                          <input type="hidden" name="social-media">
+                          <i class="dropdown icon"></i>
+                          <div class="default text">Choose...</div>
+                          <div class="menu">
+                            <div class="item" data-value="0">Instagram</div>
+                            <div class="item" data-value="1">Reddit</div>
+                            <div class="item" data-value="2">Twitter</div>
+                          </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="field">
+                          <div class="ui input">
+                            <input type="text" name="username" placeholder="account name">
+                          </div>
+                          <br>
+                        </div>
+                        <button class=" ui button">Search for Account!&nbsp<i class="fa fa-search"></i></button>
+                     </div>
+                   </div>
                  </div>
              </div>
          </div>
      </div>
+   </div>
     <div id="privacy" class="ui tab" data-tab="privacy">
-        <div id="privacyContent" class="ui centered algined padded grid">
+        <div id="privacyContent" class="ui padded left aligned grid">
 
           <div class="twelve wide centered column">
               <img class="ui tiny centered image" src="../images/keepmeup-logo.png">
